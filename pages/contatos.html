@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="../css/contatos.css">
+
+<h2>
+    <a href="#home"><i class="fas fa-fw fa-arrow-left"></i></a>
+    <span>Faça Contato</span>    
+</h2>
+<div class="pageWrap">
+
+<div id="msgFb"></div>
+
+<form action="#contatos" method="post" id="contatos">
+    Preencha o formulário abaixo para entrar em contato com a equipe do 'Cachorros'.
+
+<div id="msgErroBox">
+    <div id="msgErro"></div>
+</div>
+
+<p>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" placeholder="Seu nome completo.">
+</p>
+<p>
+    <label for="email">E-mail:</label>
+    <input type="text" name="email" id="email" placeholder="Seu e-mail principal.">
+</p>
+<p>
+    <label for="assunto">Assunto:</label>
+    <input type="text" name="assunto" id="assunto" placeholder="Assunto do seu contato.">
+</p>
+<p>
+    <label for="mensagem">Mensagem:</label>
+    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem."></textarea>
+</p>
+<p>
+    <button class="btnDefault" type="submit" name="enviar" id="enviar">Enviar</button>
+</p>
+</form>
+
+</div>
+
+<script src="../js/contatos.js"></script>

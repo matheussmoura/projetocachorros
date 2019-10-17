@@ -1,0 +1,46 @@
+.pageWrap label {
+    display: block;
+    padding: 0 1rem .2rem .5rem;
+}
+.pageWrap input, .pageWrap textarea, .pageWrap button {
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    padding: .3rem .5rem;
+    width: 100%;
+    border-radius: .3rem;
+}
+.pageWrap textarea {
+    height: 5rem;
+}
+.pageWrap button {
+    border: 0;
+}
+#msgErroBox, #msgFb {
+    display: none;
+}
+#msgErro {
+    background: #ee0707;
+    color: rgb(0, 0, 0);
+    font-size: 80%;
+    display: table;
+    margin: auto;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: .3rem;
+}
+#msgErro > span {
+    display: block;
+    float: right;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: .2rem;
+    background: #fff;
+}
+#msgErro > span:hover {
+    background: red;
+    color: #fff;
+}
+#msgErro > h3 {
+    margin: 0;
+}

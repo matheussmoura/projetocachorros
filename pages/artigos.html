@@ -1,0 +1,25 @@
+<h1>artigos</h1>
+
+<div id="lista"></div>
+
+<script>
+    var lista = "";
+db.collection("artigos").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        art=doc.data();
+        lista += `
+        
+<div class="lista">
+<img src="${art.imagem}" alt="${art.titulo}">
+<h3>${art.titulo}</h3>
+<p>${art.texto}</p>
+</div>        
+        
+        
+        `;
+    });
+
+$("#lista").html(lista)
+
+});
+</script>
